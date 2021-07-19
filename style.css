@@ -1,19 +1,45 @@
 @charset "UTF-8";
 
-/*画面のスタイル*/
-
-body {
+/*スタイルのリセット*/
+abbr, address, article,
+aside, audio, b,
+blockquote, body,
+canvas, cite, code,
+dd, del, details,
+dfn, div, dl,
+dt, em, fieldset,
+figcaption, figure, footer,
+form, h1, h2,
+h3, h4, h5,
+h6, header,
+hgroup, html, i,
+iframe, img, ins,
+kbd, label, legend,
+li, main, mark,
+menu, nav, object,
+ol, p, pre,
+q, samp, section,
+small, span, strong,
+sub, summary, sup,
+time, ul, var, video {
 	font-family: "MS Pゴシック";
 	margin: 0;
-	min-width: 1070px;
+	padding: 0;
+	border: 0;
+}
+
+/*ラッパーの設定*/
+#wrapper {
+	max-width: 1440px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /*ヘッターのスタイル*/
-
 .block-header {
 	margin: 0 10px;
 	padding: 0 20px 10px;
-	box-shadow: 0px 10px 10px -5px rgba(204,204,204,0.3);
+	box-shadow: 0px 10px 10px -5px rgba(204, 204, 204, 0.3);
 }
 
 .block-header a {
@@ -24,4 +50,70 @@ body {
 
 .color-green {
 	color: #00abae;
+}
+
+/*メインとサブメインのテキストを中央寄せと余白の調整*/
+.main, .sub-main{
+	text-align: center;
+	margin: 30px;
+	padding: 30px	;
+}
+
+/*メインとサブメインのタイトルのスタイル*/
+.main h2, .sub-main h2 {
+	letter-spacing: 0.1em;
+	margin: 6px;
+	padding: 6px;
+}
+
+/*メインのスタイル*/
+.main b {
+	display: block;
+	margin: 3px;
+	padding: 3px;
+}
+
+.main p {
+	margin: 3px;
+	padding: 3px;
+}
+
+.main p:nth-child(4) {
+	color: #00abae;
+}
+
+.main ul li {
+	display: inline-block;
+}
+
+.main ul li img {
+	list-style: none;
+	width: 50px;
+	height: 50px;
+}
+
+
+/*サブメインのスタイル*/
+.sub-main h2 {
+	margin-bottom: 60px;
+}
+
+ .sub-main  h3, .sub-main p, .button {
+	margin: auto;
+	min-width: 620px;
+	max-width: 620px;
+	padding: 6px;
+	text-align: left;
+}
+
+.sub-main .button {
+	min-width: 310px;
+	max-width: 310px;
+	line-height: 30px;
+	text-align: center;
+	display: inline-block;
+	background: #9b4dca;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
 }
