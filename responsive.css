@@ -1,0 +1,25 @@
+/*スマホとタブレットのスタイル*/ 
+@media screen and (max-width:767px) {
+	#wrapper {
+		min-width: 100%;
+	}
+
+	.sub-main img {
+		max-width: 100%;
+	}
+
+	.sub-main  h3, .sub-main p .button {
+		max-width: 100%;
+	}
+
+	.sub-main .button {
+		display: block;
+		margin: auto;
+		margin-top: 6px;
+		margin-bottom: 6px;
+	}
+
+	.block-footer {
+		padding: 30px;
+	}
+}
