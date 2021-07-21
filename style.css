@@ -28,24 +28,23 @@ time, ul, var, video {
 	border: 0;
 }
 
-/*ラッパーの設定*/
+/*ラッパーのスタイル*/
 #wrapper {
 	max-width: 1440px;
-	margin-right: auto;
-	margin-left: auto;
+	min-width: 1024px;
+}
+
+/*コンテナのスタイル*/
+#contener {
+	background-color: #EEEEEE;
 }
 
 /*ヘッターのスタイル*/
 .block-header {
-	margin: 0 10px;
+	/*margin: 0 10px;*/
 	padding: 0 20px 10px;
-	box-shadow: 0px 10px 10px -5px rgba(204, 204, 204, 0.3);
-}
+	box-shadow: 0px 10px 10px -5px rgba(204, 204, 204, 0.6);
 
-.block-header a {
-	color: #000;
-	text-decoration: none;
-	letter-spacing: 0.1em;
 }
 
 .color-green {
@@ -53,10 +52,8 @@ time, ul, var, video {
 }
 
 /*メインとサブメインのテキストを中央寄せと余白の調整*/
-.main, .sub-main{
+.main, .sub-main {
 	text-align: center;
-	margin: 30px;
-	padding: 30px	;
 }
 
 /*メインとサブメインのタイトルのスタイル*/
@@ -73,21 +70,21 @@ time, ul, var, video {
 	padding: 3px;
 }
 
-.main p {
+.main p, .main ul li{
 	margin: 3px;
 	padding: 3px;
 }
 
-.main p:nth-child(4) {
+.main :nth-child(4) {
 	color: #00abae;
 }
 
 .main ul li {
 	display: inline-block;
+	list-style: none;
 }
 
 .main ul li img {
-	list-style: none;
 	width: 50px;
 	height: 50px;
 }
@@ -95,12 +92,17 @@ time, ul, var, video {
 
 /*サブメインのスタイル*/
 .sub-main h2 {
-	margin-bottom: 60px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
- .sub-main  h3, .sub-main p, .button {
+.sub-main :nth-child(4) {
+	color: #00abae;
+}
+
+ .sub-main  h3, .sub-main p {
 	margin: auto;
-	min-width: 620px;
+	/*min-width: 620px;*/
 	max-width: 620px;
 	padding: 6px;
 	text-align: left;
@@ -108,12 +110,19 @@ time, ul, var, video {
 
 .sub-main .button {
 	min-width: 310px;
-	max-width: 310px;
+	/*max-width: 310px;*/
 	line-height: 30px;
 	text-align: center;
 	display: inline-block;
-	background: #9b4dca;
-	color: #fff;
+	background: #00abae;
+	color: #ffff;
 	border-radius: 5px;
 	text-decoration: none;
+	margin-bottom: 30px;
+}
+
+.block-footer {
+	text-align: center;
+	margin: 0 10px;
+	padding: 0 20px 10px;
 }
